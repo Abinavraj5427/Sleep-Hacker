@@ -1,0 +1,57 @@
+{
+    "identityPoolName": "sleephackeridentitypool",
+    "allowUnauthenticatedIdentities": true,
+    "thirdPartyAuth": false,
+    "lambdaLogPolicy": "sleepHackerAuth_lambda_log_policy",
+    "openIdLambdaRoleName": "sleepHackerAuth_openid_lambda_role",
+    "openIdRolePolicy": "sleepHackerAuth_openid_pass_role_policy",
+    "openIdLambdaIAMPolicy": "sleepHackerAuth_openid_lambda_iam_policy",
+    "openIdLogPolicy": "sleepHackerAuth_openid_lambda_log_policy",
+    "userPoolName": "sleephackeruserpool",
+    "autoVerifiedAttributes": [
+        "email"
+    ],
+    "mfaConfiguration": "OFF",
+    "mfaTypes": [
+        "SMS Text Message"
+    ],
+    "roleName": "sleepHackerAuth_sns-role",
+    "roleExternalId": "sleepHackerAuth_role_external_id",
+    "policyName": "sleepHackerAuth-sns-policy",
+    "smsAuthenticationMessage": "Your authentication code is {####}",
+    "smsVerificationMessage": "Your verification code is {####}",
+    "emailVerificationSubject": "Sleep Hacker Verification Code",
+    "emailVerificationMessage": "Your verification code is {####}",
+    "defaultPasswordPolicy": false,
+    "passwordPolicyMinLength": 8,
+    "passwordPolicyCharacters": [
+        "Requires Lowercase",
+        "Requires Uppercase",
+        "Requires Numbers",
+        "Requires Symbols"
+    ],
+    "requiredAttributes": [
+        "email"
+    ],
+    "userpoolClientName": "sleepHackerAuth_app_client",
+    "userpoolClientGenerateSecret": true,
+    "userpoolClientRefreshTokenValidity": 30,
+    "userpoolClientReadAttributes": [
+        "email"
+    ],
+    "mfaLambdaRole": "sleepHackerAuth_totp_lambda_role",
+    "mfaLambdaLogPolicy": "sleepHackerAuth_totp_lambda_log_policy",
+    "mfaPassRolePolicy": "sleepHackerAuth_totp_pass_role_policy",
+    "mfaLambdaIAMPolicy": "sleepHackerAuth_totp_lambda_iam_policy",
+    "userpoolClientLambdaRole": "sleepHackerAuth_userpoolclient_lambda_role",
+    "userpoolClientLogPolicy": "sleepHackerAuth_userpoolclient_lambda_log_policy",
+    "userpoolClientLambdaPolicy": "sleepHackerAuth_userpoolclient_lambda_iam_policy",
+    "userpoolClientSetAttributes": false,
+    "useDefault": "manual",
+    "authSelections": "identityPoolAndUserPool",
+    "resourceName": "sleepHackerAuth",
+    "unAuthRoleName": "sleepackz-20190312192945-unauthRole",
+    "authRoleName": "sleepackz-20190312192945-authRole",
+    "unAuthRoleArn": "arn:aws:iam::603861682741:role/sleepackz-20190312192945-unauthRole",
+    "authRoleArn": "arn:aws:iam::603861682741:role/sleepackz-20190312192945-authRole"
+}

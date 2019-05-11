@@ -1,0 +1,9 @@
+{
+    "bucketName": "sleephackerbucket",
+    "authPolicyName": "s3_amplify_5bb13e9f",
+    "unauthPolicyName": "s3_amplify_5bb13e9f",
+    "authRoleName": "sleepackz-20190312192945-authRole",
+    "unauthRoleName": "sleepackz-20190312192945-unauthRole",
+    "authPermissions": "rw",
+    "unauthPermissions": ""
+}

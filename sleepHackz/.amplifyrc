@@ -1,0 +1,14 @@
+{
+    "providers": {
+        "awscloudformation": {
+            "AuthRoleName": "sleepackz-20190312192945-authRole",
+            "UnauthRoleArn": "arn:aws:iam::603861682741:role/sleepackz-20190312192945-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::603861682741:role/sleepackz-20190312192945-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "sleepackz-20190312192945-deployment",
+            "UnauthRoleName": "sleepackz-20190312192945-unauthRole",
+            "StackName": "sleepackz-20190312192945",
+            "StackId": "arn:aws:cloudformation:us-east-1:603861682741:stack/sleepackz-20190312192945/1b201800-4527-11e9-882e-0aa7a65c926c"
+        }
+    }
+}

@@ -1,0 +1,86 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "sleepackz-20190312192945-authRole",
+			"UnauthRoleArn": "arn:aws:iam::603861682741:role/sleepackz-20190312192945-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::603861682741:role/sleepackz-20190312192945-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "sleepackz-20190312192945-deployment",
+			"UnauthRoleName": "sleepackz-20190312192945-unauthRole",
+			"StackName": "sleepackz-20190312192945",
+			"StackId": "arn:aws:cloudformation:us-east-1:603861682741:stack/sleepackz-20190312192945/1b201800-4527-11e9-882e-0aa7a65c926c"
+		}
+	},
+	"auth": {
+		"sleepHackerAuth": {
+			"service": "Cognito",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/sleepackz-20190312192945-deployment/amplify-cfn-templates/auth/sleepHackerAuth-cloudformation-template.yml",
+				"logicalId": "authsleepHackerAuth"
+			},
+			"lastPushTimeStamp": "2019-03-13T02:37:38.756Z",
+			"output": {
+				"AppClientSecret": "1vuhv4loekbfk5cs39h7fg2gmpmkqjcbg8l1ajjo3j2u32tbkq99",
+				"UserPoolId": "us-east-1_8HlEk7DFL",
+				"AppClientIDWeb": "ptbf4ghj0snl68kq1ec23e1r7",
+				"AppClientID": "31amfj5hthhom8dddrtcg87jio",
+				"IdentityPoolId": "us-east-1:7baed208-cd1b-4900-a2d0-aa3eb4005372",
+				"IdentityPoolName": "sleephackeridentitypool",
+				"UserPoolName": "sleephackeruserpool"
+			},
+			"lastPushDirHash": "OYzVBG9BagksrdLbDxUiPqdczb8="
+		}
+	},
+	"storage": {
+		"sleepHackerStorage": {
+			"service": "S3",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/sleepackz-20190312192945-deployment/amplify-cfn-templates/storage/s3-cloudformation-template.json",
+				"logicalId": "storagesleepHackerStorage"
+			},
+			"lastPushTimeStamp": "2019-03-13T02:37:38.759Z",
+			"output": {
+				"BucketName": "sleephackerbucket",
+				"Region": "us-east-1"
+			},
+			"lastPushDirHash": "tJlucqCDsNr+jvvXlwegj9j9glU="
+		}
+	},
+	"analytics": {
+		"sleepHackerAnalytics": {
+			"service": "Pinpoint",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/sleepackz-20190312192945-deployment/amplify-cfn-templates/analytics/pinpoint-cloudformation-template.json",
+				"logicalId": "analyticssleepHackerAnalytics"
+			},
+			"lastPushTimeStamp": "2019-03-13T02:37:38.761Z",
+			"output": {
+				"appName": "sleepHackerAnalytics",
+				"Region": "us-east-1",
+				"Id": "7cfb2ce4a1634ccfa91850a8c6b461b7"
+			},
+			"lastPushDirHash": "1wh2OEruTP4R9H3XH/GhgoDbVYY="
+		}
+	},
+	"hosting": {
+		"S3AndCloudFront": {
+			"service": "S3AndCloudFront",
+			"providerPlugin": "awscloudformation",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/sleepackz-20190312192945-deployment/amplify-cfn-templates/hosting/template.json",
+				"logicalId": "hostingS3AndCloudFront"
+			},
+			"lastPushTimeStamp": "2019-03-13T02:37:38.784Z",
+			"output": {
+				"S3BucketSecureURL": "https://sleephackerhostingbucket.s3.amazonaws.com",
+				"WebsiteURL": "http://sleephackerhostingbucket.s3-website-us-east-1.amazonaws.com",
+				"Region": "us-east-1",
+				"HostingBucketName": "sleephackerhostingbucket"
+			},
+			"lastPushDirHash": "VmPzsiwKTnj31UL9aMRV7BTFVu4="
+		}
+	}
+}

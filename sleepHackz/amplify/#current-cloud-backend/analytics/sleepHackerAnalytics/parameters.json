@@ -1,0 +1,11 @@
+{
+    "appName": "sleepHackerAnalytics",
+    "roleName": "pinpointLambdaRole258216b7",
+    "cloudWatchPolicyName": "cloudWatchPolicy258216b7",
+    "pinpointPolicyName": "pinpointPolicy258216b7",
+    "authPolicyName": "pinpoint_amplify_258216b7",
+    "unauthPolicyName": "pinpoint_amplify_258216b7",
+    "authRoleName": "sleepackz-20190312192945-authRole",
+    "unauthRoleName": "sleepackz-20190312192945-unauthRole",
+    "IAMPrefix": "603861682741"
+}

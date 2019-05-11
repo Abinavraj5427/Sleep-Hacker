@@ -1,0 +1,20 @@
+{
+    "projectName": "sleepHackz",
+    "projectPath": "C:\\Users\\abina\\Desktop\\CS LABS\\sleepHack\\sleepHackz",
+    "defaultEditor": "none",
+    "frontendHandler": {
+        "javascript": "C:\\Users\\abina\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-frontend-javascript"
+    },
+    "javascript": {
+        "framework": "react-native",
+        "config": {
+            "SourceDir": "/",
+            "DistributionDir": "/",
+            "BuildCommand": "npm.cmd run-script build",
+            "StartCommand": "npm.cmd run-script start"
+        }
+    },
+    "providers": {
+        "awscloudformation": "C:\\Users\\abina\\AppData\\Roaming\\npm\\node_modules\\@aws-amplify\\cli\\node_modules\\amplify-provider-awscloudformation"
+    }
+}
